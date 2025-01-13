@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Baju Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TOKO BAJU ONLINE</h1>
+        <p>Temukan Baju Wanita Kekinian!</p>
+        <button onclick="viewCart()">Lihat Keranjang</button>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product" data-id="1" data-name="jas" data-price="150000">
+                <img src="jas.jpg" alt="Jas">
+                <h2>jas</h2>
+                <p>Harga: Rp.150.000</p>
+                <button onclick="addToCart(1, 'jas', 150000)">Beli Sekarang</button>
+            </div>
+            <div class="product" data-id="2" data-name="Blouse" data-price="130000">
+                <img src="blouse.jpg" alt="Blouse">
+                <h2>Blouse</h2>
+                <p>Harga: Rp.130.000</p>
+                <button onclick="addToCart(2, 'Blouse', 130000)">Beli Sekarang</button>
+            </div>
+            <div class="product" data-id="3" data-name="Jaket" data-price="200000">
+                <img src="jaket.jpg" alt="Jaket">
+                <h2>jaket</h2>
+                <p>Harga: Rp.200.000</p>
+                <button onclick="addToCart(3, 'Jaket', 200000)">Beli Sekarang</button>
+            </div>
+            <div class="product" data-id="4" data-name="Outer" data-price="100000">
+                <img src="outer.jpg" alt="Outer">
+                <h2>Outer</h2>
+                <p>Harga: Rp.100.000</p>
+                <button onclick="addToCart(4, 'Outer', 100000)">Beli Sekarang</button>
+            </div>
+            <div class="product" data-id="5" data-name="Kemeja" data-price="110000">
+                <img src="Kemeja.jpg" alt="Kemeja">
+                <h2>Kemeja</h2>
+                <p>Harga: Rp.110.000</p>
+                <button onclick="addToCart(5, 'Kemeja', 110000)">Beli Sekarang</button>
+            </div>
+            <div class="product" data-id="6" data-name="Korean Style" data-price="105000">
+                <img src="korean style.jpg" alt="Korean Style">
+                <h2>Korean Style</h2>
+                <p>Harga: Rp.105.000</p>
+                <button onclick="addToCart(6, 'Korean Style', 105000)">Beli Sekarang</button>
+            </div>
+            <div class="product" data-id="7" data-name="Batik" data-price="125000">
+                <img src="batik.jpg" alt="Batik">
+                <h2>Batik</h2>
+                <p>Harga: Rp.125.000</p>
+                <button onclick="addToCart(7, 'Batik', 125000)">Beli Sekarang</button>
+            </div>
+            <div class="product" data-id="8" data-name="Tunik" data-price="120000">
+                <img src="tunik.jpg" alt="Tunik">
+                <h2>Tunik</h2>
+                <p>Harga: Rp.120.000</p>
+                <button onclick="addToCart(8, 'Batik', 120000)">Beli Sekarang</button>
+            </div>
+        </section>
+
+        <!-- Daftar Keranjang -->
+        <section id="cart-details" class="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-list"></ul>
+            <p id="cart-total"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Toko Baju Online. All rights reserved.</p>
+        <button onclick="checkout()">Checkout</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

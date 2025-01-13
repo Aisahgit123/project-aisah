@@ -1,0 +1,163 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:gray;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px #fff(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+}
+
+header p {
+    color: white;
+}
+
+/* Produk */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+.product p {
+    color: #555;
+    font-size: 1em;
+    margin: 3px 0;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+/* Keranjang */
+.cart {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.cart h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.cart ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart ul li:last-child {
+    border-bottom: none;
+}
+
+.cart p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+footer button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #218838;
+}
